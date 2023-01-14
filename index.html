@@ -15,45 +15,65 @@
     <title>Crypto Portfolio</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container header__container">
-        <img
-          src="./assets/img/logo.svg"
-          alt="Logo for the company named Netbook and is a circle split diagonal with orange and yellow sections and a line with a dot in the end."
-          width="145"
-          height="35"
-        />
-        <nav class="header__nav">
-          <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Events</a></li>
-          </ul>
-        </nav>
+    <div class="prime">
+      <header class="header">
+        <div class="container header__container">
+          <img
+            src="./assets/img/logo.svg"
+            alt="Logo for the company named Netbook and is a circle split diagonal with orange and yellow sections and a line with a dot in the end."
+            width="145"
+            height="35"
+          />
+          <nav class="header__nav">
+            <ul>
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </nav>
 
-        <div class="header__actions">
-          <form class="header__search" action="">
-            <img
-              src="./assets/img/icon-search.svg"
-              alt="Magnify glass icon for search"
-              width="16"
-              height="16"
-            />
-            <input
-              type="search"
-              aria-label="search"
-              placeholder="Search here..."
-            />
-          </form>
-          <a class="btn" href="/login">Log in</a>
+          <div class="header__actions">
+            <form class="header__search" action="">
+              <img
+                src="./assets/img/icon-search.svg"
+                alt="Magnify glass icon for search"
+                width="16"
+                height="16"
+              />
+              <input
+                type="search"
+                aria-label="search"
+                placeholder="Search here..."
+              />
+            </form>
+            <a class="btn" href="/login">Log in</a>
+          </div>
         </div>
-      </div>
-    </header>
-    <main>
-      <section class="hero">
-        <p>Hello world</p>
+      </header>
+
+      <section class="container hero">
+        <div class="hero__content">
+          <h2>Netbook community</h2>
+          <h3>Your solutions for Community!</h3>
+          <p>
+            More than 2 billion people in over countries use socibook to stay in
+            touch with friends & family.
+          </p>
+          <a class="btn" href="">About More</a>
+          <a class="btn" href="">Invite Friend</a>
+        </div>
+
+        <div class="hero__image">
+          <img
+            src="./assets/img/hero-img.svg"
+            alt="Illustration of 3 persons talking with bubble messages floating between them."
+          />
+        </div>
       </section>
+    </div>
+
+    <main>
       <div class="clients"></div>
       <section class="whats-netbooks"></section>
       <section class="community"></section>
