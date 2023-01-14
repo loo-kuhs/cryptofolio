@@ -24,20 +24,34 @@
       />
       <nav class="header__nav">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a class="active" href="#">Home</a></li>
           <li><a href="#">Community</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Events</a></li>
         </ul>
       </nav>
 
-      <div>
-        <input type="search" name="" id="" />
+      <div class="header__actions">
+        <form class="header__search" action="">
+          <img
+            src="./assets/img/icon-search.svg"
+            alt="Magnify glass icon for search"
+            width="16"
+            height="16"
+          />
+          <input
+            type="search"
+            aria-label="search"
+            placeholder="Search here..."
+          />
+        </form>
         <a class="btn" href="/login">Log in</a>
       </div>
     </header>
     <main>
-      <section class="hero"></section>
+      <section class="hero">
+        <p>Hello world</p>
+      </section>
       <div class="clients"></div>
       <section class="whats-netbooks"></section>
       <section class="community"></section>
