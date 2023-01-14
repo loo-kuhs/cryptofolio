@@ -70,6 +70,7 @@ h6 {
 
 :root {
   --color-primary: #217bf4;
+  --color-primary-10: rgba(33, 123, 244, 0.1);
   --color-secondary: #ffaf2e;
   --color-white: #ffffff;
   --color-heading: #0a093d;
@@ -112,8 +113,16 @@ a {
   border-radius: 1rem;
 }
 
-.header {
+.container {
   width: var(--full-width);
+}
+
+.header {
+  border-bottom: 1px solid var(--color-primary-10);
+  padding: 1.5rem 0;
+}
+
+.header__container {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 9.0625rem 1fr auto;
