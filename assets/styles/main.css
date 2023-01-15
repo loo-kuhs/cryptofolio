@@ -162,7 +162,7 @@ a {
 
 .header__search {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   border-bottom: 0.0625rem solid #e5e5e5;
   padding-bottom: 1rem;
   align-items: center;
@@ -180,9 +180,9 @@ a {
 }
 
 .hero__title {
-  font-size: .75rem;
+  font-size: 0.75rem;
   background-color: var(--color-primary-10);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   display: inline-flex;
   align-items: center;
   color: var(--color-primary);
@@ -292,8 +292,56 @@ a {
   transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
 }
 
+.achievement .card a {
+  position: relative;
+  padding-right: 1.25rem;
+}
+
+.achievement .card a:hover {
+  color: var(--color-primary);
+}
+
+/* .achievement .card a::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  background-image: url("../img/icon-ArrowRight.svg");
+  width: 10px;
+  height: 10px;
+} */
+
+.achievement .card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .achievement .card:hover {
   box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.24);
-  /* box-shadow: 0px 26px 49px black; */
   transform: translate(-4px, -4px);
+}
+
+/* .achievement .card:hover img {
+  fill: rgb(33, 123, 244);
+} */
+
+.achievement .card__subtitle {
+  margin-bottom: 2.5rem;
+}
+
+.achievement .card__subtitle b {
+  color: var(--color-primary);
+}
+
+.achievement .card__content {
+  margin-bottom: 2rem;
+}
+
+.card.rating .card__title,
+.card.awards .card__title {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
 }
