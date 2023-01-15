@@ -107,7 +107,7 @@ a {
   padding: 0 2.5rem;
   line-height: 1;
   align-items: center;
-  border-radius: 16px;
+  border-radius: 1rem;
 }
 
 .btn__secondary {
@@ -132,14 +132,14 @@ a {
 
 .header {
   border-bottom: 0.0625rem solid var(--color-primary-10);
-  padding: 24px 0;
+  padding: 1.5rem 0;
 }
 
 .header__container {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 145px 1fr auto;
-  gap: 72px;
+  gap: 4.5rem;
   align-items: center;
 }
 
@@ -147,7 +147,7 @@ a {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .header__nav a.active {
@@ -157,86 +157,86 @@ a {
 
 .header__actions {
   display: flex;
-  gap: 48px;
+  gap: 3rem;
 }
 
 .header__search {
   display: flex;
-  gap: 8px;
+  gap: .5rem;
   border-bottom: 0.0625rem solid #e5e5e5;
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
   align-items: center;
 }
 
 .header__search input {
   all: unset;
-  width: 120px;
+  width: 7.5rem;
 }
 
 .hero {
   display: flex;
   align-items: center;
-  padding: 80px 0;
+  padding: 5rem 0;
 }
 
 .hero__title {
-  font-size: 12px;
+  font-size: .75rem;
   background-color: var(--color-primary-10);
-  border-radius: 8px;
+  border-radius: .5rem;
   display: inline-flex;
   align-items: center;
   color: var(--color-primary);
-  padding: 0 32px;
-  height: 32px;
+  padding: 0 2rem;
+  height: 2rem;
 }
 
 .hero__subtitle {
-  font-size: 56px;
+  font-size: 3.5rem;
   line-height: 1.1;
-  margin: 24px 0;
+  margin: 1.5rem 0;
 }
 
 .hero__description {
-  font-size: 18px;
-  margin-bottom: 40px;
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
 }
 
 .hero__cta {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .whats-netbooks {
   display: flex;
   align-items: center;
-  gap: 200px;
-  margin: 96px auto;
+  gap: 12.5rem;
+  margin: 6rem auto;
 }
 
 .whats-netbooks__content h2 {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: var(--color-primary);
 }
 
 .whats-netbooks__content h3 {
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 1.33;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .whats-netbooks__content p {
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .whats-netbooks__content ul {
-  font-size: 18px;
+  font-size: 1.125rem;
   list-style: none;
   padding-left: 0;
 }
 
 .whats-netbooks__content li {
   position: relative;
-  padding-left: 32px;
+  padding-left: 2rem;
 }
 
 /* TODO: Find a better way to apply border color */
@@ -256,7 +256,7 @@ a {
 
 .whats-netbooks__images {
   display: grid;
-  gap: 32px;
+  gap: 2rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
@@ -265,11 +265,17 @@ a {
 }
 
 .whats-netbooks__images img {
-  border-radius: 16px;
+  border-radius: 1rem;
 }
 
 .whats-netbooks__video {
   grid-row: 1 / -1;
+}
+
+.achievement {
+  display: grid;
+  grid-template-columns: 21.25rem 21.25rem 1fr;
+  gap: 1.5rem;
 }
 
 .achievement .card {
@@ -283,8 +289,11 @@ a {
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 3rem 1.125rem 2.5rem 2.5rem;
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
 }
 
 .achievement .card:hover {
   box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.24);
+  /* box-shadow: 0px 26px 49px black; */
+  transform: translate(-4px, -4px);
 }
