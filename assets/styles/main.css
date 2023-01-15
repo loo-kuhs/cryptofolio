@@ -323,9 +323,9 @@ a {
   transform: translate(-4px, -4px);
 }
 
-/* .achievement .card:hover img {
-  fill: rgb(33, 123, 244);
-} */
+.achievement .card a:hover img {
+  filter: hue-rotate(240deg) saturate(150%) brightness(150%);
+}
 
 .achievement .card__subtitle {
   margin-bottom: 2.5rem;
