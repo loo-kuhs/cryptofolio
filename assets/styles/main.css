@@ -293,38 +293,22 @@ a {
 }
 
 .achievement .card a {
-  position: relative;
-  padding-right: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .achievement .card a:hover {
   color: var(--color-primary);
 }
 
-/* .achievement .card a::after {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  content: "";
-  background-image: url("../img/icon-ArrowRight.svg");
-  width: 10px;
-  height: 10px;
-} */
-
-.achievement .card a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
+.achievement .card a:hover svg path {
+  stroke: var(--color-primary);
 }
 
 .achievement .card:hover {
   box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.24);
   transform: translate(-4px, -4px);
-}
-
-.achievement .card a:hover img {
-  filter: hue-rotate(240deg) saturate(150%) brightness(150%);
 }
 
 .achievement .card__subtitle {
@@ -344,4 +328,26 @@ a {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 2rem;
+}
+
+.card.rating .card__subtitle {
+  display: flex;
+  align-items: center;
+}
+
+.card__avatars {
+  display: inline-flex;
+  margin-right: 1rem;
+}
+
+.card__avatars img {
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+  width: 1.5rem;
+  aspect-ratio: 1 / 1;
+  box-shadow: -5px 4px 14px rgba(151, 151, 151, 0.28);
+}
+
+.card__avatars img:not(:first-child) {
+  margin-left: -6px;
 }
