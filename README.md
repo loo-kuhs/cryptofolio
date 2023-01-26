@@ -5,6 +5,7 @@
 - [x] Added **Achievement** section.
 - [x] Added **Community** section.
 - [x] Added **Teams** section.
+- [x] Added **App** section.
 -  Add **News** section.
 -  Add footer.
 -  Make the page responsive.
