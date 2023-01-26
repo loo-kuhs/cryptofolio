@@ -312,6 +312,7 @@ p.section__subtitle {
   grid-template-columns: 340px 340px 1fr;
   gap: 1.5rem;
   align-items: center;
+  margin-bottom: 11.25rem;
 }
 
 .achievement .card {
@@ -384,6 +385,12 @@ p.section__subtitle {
   gap: 2.5rem;
 }
 
+.community__content {
+  text-align: center;
+  width: 28rem;
+  margin: 0 auto 4rem;
+}
+
 .community__card {
   padding: 2.5rem 4rem 2.5rem 2.5rem;
   background-color: var(--color-white);
@@ -392,9 +399,6 @@ p.section__subtitle {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-}
-
-.community__card-content {
 }
 
 .community__card-icon {
