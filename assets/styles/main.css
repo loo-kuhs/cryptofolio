@@ -620,3 +620,7 @@ a.link__arrowed:hover svg path {
   text-align: center;
   margin-bottom: 5rem;
 }
+
+.footer {
+  background-color: #282B39;
+}
