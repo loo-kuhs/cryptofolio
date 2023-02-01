@@ -637,6 +637,7 @@ a.link__arrowed:hover svg path {
 .footer {
   background-color: #282b39;
   color: #e7e7e7;
+  margin-top: 7.5rem;
 }
 
 .footer h3 {
